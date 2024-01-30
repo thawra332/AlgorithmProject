@@ -18,7 +18,7 @@ mergetime = []
 insertiontime = []
 bubbletime = []
 print("This program is made by Amenh Rabayaa")
-print("information about this program:\n1-The number of elements in the array IS 1000 element \n2-The time taken to sort the array is provided\n3- am using Matplot libarary in python to draw the graph\n"+
+print("information about this program:\n1-The number of elements in the array is 10 - 1000 element \n2-The time taken to sort the array is provided\n3- am using Matplot libarary in python to draw the graph\n"+
       "4-there is three different way using random,Sorting,Reverce input\n \n \n" )
 input_arr_sorted=[]
 for i in range(0,1001,10):
@@ -205,11 +205,12 @@ match data:
 # Plot the results
 n_values = [i for i in range(0, 1001,10)]
 plt.figure("Amneh: Project Algorithm")
-plt.plot(n_values, selection_comparisons, label='Selection Sort')
+
 plt.plot(n_values, bubble_comparisons, label='Bubble Sort')
 plt.plot(n_values, insertion_comparisons, label='Insertion Sort')
 plt.plot(n_values, merge_comparisons, label='Merge Sort')
 plt.plot(n_values, quick_comparisons, label='Quick Sort')
+plt.plot(n_values, selection_comparisons, label='Selection Sort')
 plt.xlabel('Input Size (n)')
 plt.ylabel('Total Number of Element Comparisons')
 plt.title('Sorting Algorithm Comparison')
